@@ -6,14 +6,16 @@ body {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  backdrop-filter: brightness(5%);
 }
 #light {
   position: absolute;
-  height: 400px;
-  width: 400px;
-  background-color: aquamarine;
+  height: 600px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.1);
   transform: translate(-50%, -50%);
   border-radius: 100%;
+  filter: blur(50px);
 }
 .main-content {
   height: 100vh;
@@ -22,19 +24,23 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  position: relative;
 }
 .title {
   color: white;
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 500;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ff0000, 0 0 30px #ff0000,
+    0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #ff0000;
 }
 .subtitle {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow: 0.2rem 0.2rem 10px black;
 }
 .glow {
-  color: red;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff,
+    0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
 }
 #homepage {
   margin-top: 20px;
