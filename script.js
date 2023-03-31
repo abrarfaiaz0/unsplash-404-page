@@ -1,5 +1,6 @@
 fast = document.querySelectorAll(".fast");
 slow = document.querySelectorAll(".slow");
+let light = document.getElementById("light");
 
 window.setInterval(() => {
   fast.forEach((element) => {
@@ -13,4 +14,11 @@ window.setInterval(() => {
   });
 }, 1000);
 
-console.log(fast);
+function lightup(e) {
+  let x = e.clientX;
+  let y = e.clientY;
+  light.style.left = x + "px";
+  light.style.top = y + "px";
+}
+
+document.body.addEventListener("mousemove", lightup);

@@ -1,16 +1,26 @@
 body {
+  margin: 0px;
   background: url(bg.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+#light {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background-color: aquamarine;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
 }
 .main-content {
-  position: fixed;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 .title {
@@ -28,10 +38,11 @@ body {
 }
 #homepage {
   margin-top: 20px;
-  color: white;
-  padding: 1rem;
-  font-size: 1.5rem;
-  border: 2px solid white;
-  background-color: transparent;
+  color: black;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: 0px;
+  background-color: white;
   cursor: pointer;
 }
